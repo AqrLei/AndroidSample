@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewNormal"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewSmooth"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:banner_indicator_normal_width="9dp"
+            app:banner_indicator_slide_mode="SMOOTH" />
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewWorm"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:banner_indicator_normal_width="9dp"
+            app:banner_indicator_slide_mode="WORM" />
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewDashNormal"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:banner_indicator_checked_width="5dp"
+            app:banner_indicator_normal_width="5dp"
+            app:banner_indicator_style="DASH" />
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewDashSmooth"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:banner_indicator_checked_width="5dp"
+            app:banner_indicator_normal_width="5dp"
+            app:banner_indicator_slide_mode="SMOOTH"
+            app:banner_indicator_style="DASH" />
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewDashWorm"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:banner_indicator_checked_width="5dp"
+            app:banner_indicator_normal_width="5dp"
+            app:banner_indicator_slide_mode="WORM"
+            app:banner_indicator_style="DASH" />
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewCircleNormal"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:banner_indicator_checked_width="5dp"
+            app:banner_indicator_normal_width="3dp"
+            app:banner_indicator_style="CIRCLE" />
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewCircleSmooth"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:banner_indicator_checked_width="5dp"
+            app:banner_indicator_normal_width="3dp"
+            app:banner_indicator_slide_mode="SMOOTH"
+            app:banner_indicator_style="CIRCLE" />
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewCircleWorm"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:banner_indicator_checked_width="5dp"
+            app:banner_indicator_normal_width="3dp"
+            app:banner_indicator_slide_mode="WORM"
+            app:banner_indicator_style="CIRCLE" />
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewWithoutIndicator"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:banner_indicator_visibility="gone" />
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewBelow"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:banner_indicator_bias="1.0"
+            app:banner_indicator_gravity="CENTER"
+            app:banner_indicator_normal_width="9dp"
+            app:banner_indicator_position="BELOW"
+            app:banner_indicator_slide_mode="SMOOTH" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+

@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BannerStyle">
+        <item name="banner_indicator_checked_color">@android:color/holo_green_light</item>
+        <item name="banner_indicator_checked_width">9dp</item>
+        <item name="banner_indicator_gap">3dp</item>
+        <item name="banner_indicator_height">3dp</item>
+        <item name="banner_indicator_normal_color">@android:color/holo_green_dark</item>
+        <item name="banner_indicator_normal_width">3dp</item>
+        <item name="banner_indicator_style">ROUND_RECT</item>
+        <item name="isAuto">true</item>
+        <item name="banner_use_ratio">true</item>
+        <item name="widthHeightRatio">375:255</item>
+        <item name="banner_can_loop">true</item>
+        <item name="banner_indicator_marginBottom">20dp</item>
+        <item name="banner_reveal_width">50dp</item>
+        <item name="banner_offset_page_limit">3</item>
+    </style>
+
+</resources>

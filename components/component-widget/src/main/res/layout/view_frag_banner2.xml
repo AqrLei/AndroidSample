@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.aqrlei.bannerview.widget.banner2.BannerView2
+            android:id="@+id/bannerView2Gone"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:banner_transformer_style="NONE"
+            app:banner_indicator_visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="IndicatorGoneNormal"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <com.aqrlei.bannerview.widget.banner2.BannerView2
+            android:id="@+id/bannerView2Below"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:banner_indicator_bias="0.5"
+            app:banner_indicator_gravity="BIAS"
+            app:banner_indicator_position="BELOW"
+            app:banner_transformer_style="SCALE_IN" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="IndicatorBelowScaleIn"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <com.aqrlei.bannerview.widget.banner2.BannerView2
+            android:id="@+id/bannerView2Inside"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:banner_indicator_gravity="CENTER"
+            app:banner_transformer_style="ROTATE"
+            app:banner_indicator_position="INSIDE"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="IndicatorInsideRotate"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <com.aqrlei.bannerview.widget.banner2.BannerView2
+            android:id="@+id/bannerView2InsideStack"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:banner_indicator_gravity="CENTER"
+            app:banner_transformer_style="STACK"
+            app:banner_indicator_position="INSIDE"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="IndicatorInsideStack"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <com.aqrlei.bannerview.widget.banner2.BannerView2
+            android:id="@+id/bannerView2InsideDepth"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:banner_indicator_gravity="CENTER"
+            app:banner_transformer_style="DEPTH"
+            app:banner_indicator_position="INSIDE"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="IndicatorInsideDepth"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <com.aqrlei.bannerview.widget.banner2.BannerView2
+            android:id="@+id/bannerView2InsideAccordion"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:banner_indicator_gravity="CENTER"
+            app:banner_transformer_style="ACCORDION"
+            app:banner_indicator_position="INSIDE"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="IndicatorInsideAccordion"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <com.aqrlei.bannerview.widget.banner2.BannerView2
+            android:id="@+id/bannerView2InsideZoomOut"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:banner_indicator_gravity="CENTER"
+            app:banner_transformer_style="ZOOM_OUT"
+            app:banner_indicator_position="INSIDE"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="IndicatorInsideZoomOut"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <com.aqrlei.bannerview.widget.banner2.BannerView2
+            android:id="@+id/bannerView2InsideMultiOverlap"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:banner_indicator_gravity="CENTER"
+            app:banner_transformer_style="MULTI_OVERLAP"
+            app:banner_transformer_scale="0.9"
+            app:banner_indicator_position="INSIDE"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="IndicatorInsideMultiOverlap"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <com.aqrlei.bannerview.widget.banner2.BannerView2
+            android:id="@+id/bannerView2InsideMulti"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:banner_indicator_gravity="CENTER"
+            app:banner_transformer_style="MULTI"
+            app:banner_indicator_position="INSIDE"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="IndicatorInsideMulti"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+

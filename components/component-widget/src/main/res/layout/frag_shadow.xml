@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.aqrlei.widget.ShadowLayout
+        android:id="@+id/slOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:shadowBackground="@drawable/shape_ff6000_ec4000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadowColor="#F7FF6B24"
+        app:shadowCornerRadius="1000dp"
+        app:shadowSpreadRadius="6dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPickRedPacket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingStart="12dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="7dp"
+            android:singleLine="true"
+            android:text="半圆Y轴无偏移"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+    </com.aqrlei.widget.ShadowLayout>
+
+    <com.aqrlei.widget.ShadowLayout
+        android:id="@+id/slTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slOne"
+        app:shadowBackground="@drawable/shape_ff6000_ec4000"
+        app:shadowColor="#F7FF6B24"
+        app:shadowCornerRadius="1000dp"
+        app:shadowOffsetY="4dp"
+        app:shadowSpreadRadius="6dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingStart="12dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="7dp"
+            android:singleLine="true"
+            android:text="半圆Y轴有偏移"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+    </com.aqrlei.widget.ShadowLayout>
+
+    <com.aqrlei.widget.ShadowLayout
+        android:id="@+id/slThree"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintDimensionRatio="355:100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slTwo"
+        app:shadowBackground="@android:color/white"
+        app:shadowColor="#7F00FF00"
+        app:shadowCornerRadius="10dp"
+        app:shadowOffsetY="1dp"
+        app:shadowSpreadRadius="6dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="圆角矩形,纯色背景" />
+
+    </com.aqrlei.widget.ShadowLayout>
+
+    <com.aqrlei.widget.ShadowLayout
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slThree"
+        app:shadowColor="#7FFFAF7E"
+        app:shadowCornerRadius="1000dp"
+        app:shadowSpreadRadius="6dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="圆" />
+
+    </com.aqrlei.widget.ShadowLayout>
+
+    <com.aqrlei.widget.ShadowLayout
+        android:id="@+id/slFour"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slThree"
+        app:shadowBackground="#FFFFFFFF"
+        app:shadowColor="#7FFFAF7E"
+        app:shadowSpreadRadius="6dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="矩形" />
+
+    </com.aqrlei.widget.ShadowLayout>
+
+    <com.aqrlei.widget.ShadowLayout
+        android:id="@+id/slFive"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slFour"
+        app:shadowBackground="@android:color/white"
+        app:shadowColor="#7FFFAF7E"
+        app:shadowCornerRadius="1000dp"
+        app:shadowSpreadRadius="6dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="圆形" />
+
+    </com.aqrlei.widget.ShadowLayout>
+
+    <com.aqrlei.widget.ShadowLayout
+        android:id="@+id/slSix"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintDimensionRatio="355:100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slFive"
+        app:shadowBackground="@drawable/ic_sign_card_detail"
+        app:shadowColor="#7F00FF00"
+        app:shadowLeftBottomCornerRadius="20dp"
+        app:shadowLeftTopCornerRadius="100dp"
+        app:shadowOffsetY="1dp"
+        app:shadowRightBottomCornerRadius="100dp"
+        app:shadowRightTopCornerRadius="20dp"
+        app:shadowSpreadRadius="6dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="不同角度的圆角矩形,图片背景" />
+
+    </com.aqrlei.widget.ShadowLayout>
+
+    <com.aqrlei.widget.ShadowLayout
+        android:id="@+id/slSeven"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintDimensionRatio="355:100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slSix"
+        app:shadowBackground="@android:color/white"
+        app:shadowColor="#7F00FF00"
+        app:shadowCornerRadius="10dp"
+        app:shadowLeftShow="false"
+        app:shadowOffsetY="1dp"
+        app:shadowSpreadRadius="6dp"
+        app:shadowTopShow="false">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="圆角矩形,纯色背景,左上阴影不显示" />
+
+    </com.aqrlei.widget.ShadowLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

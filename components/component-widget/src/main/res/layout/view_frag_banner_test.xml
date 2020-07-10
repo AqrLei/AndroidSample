@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tvClickLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ClickToLayout"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tvClickAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ClickToAdd"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tvClickReplace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ClickToReplace"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tvClickSet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="ClickToSet"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <com.aqrlei.bannerview.widget.BannerView
+            android:id="@+id/bannerViewWorm"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:banner_can_loop="true"
+            app:banner_indicator_checked_width="5dp"
+            app:banner_indicator_gravity="START"
+            app:banner_indicator_normal_width="5dp"
+            app:banner_indicator_slide_mode="WORM"
+            app:banner_indicator_style="CIRCLE"
+            app:banner_vertical_indicator_bias="0"
+            app:isAuto="false" />
+
+        <com.aqrlei.bannerview.widget.banner2.BannerView2
+            android:id="@+id/bannerView2"
+            style="@style/BannerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:banner_can_loop="true"
+            app:banner_indicator_checked_width="5dp"
+            app:banner_indicator_gravity="END"
+            app:banner_indicator_marginBottom="20dp"
+            app:banner_indicator_marginEnd="10dp"
+            app:banner_indicator_normal_width="5dp"
+            app:banner_indicator_slide_mode="SMOOTH"
+            app:isAuto="false" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.aqrlei.widget.ShadowLayout
+        android:id="@+id/shadowLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:shadowBackground="@drawable/shape_ff6000_ec4000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shadowColor="#F7FF6B24"
+        app:shadowCornerRadius="1000dp"
+        app:shadowOffsetY="2dp"
+        app:shadowSpreadRadius="6dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPickRedPacket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/live_square_pick_red_package"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingStart="12dp"
+            android:paddingTop="7dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="7dp"
+            android:singleLine="true"
+            android:text="领红包"
+            android:textColor="@android:color/white"
+            android:textSize="12dp" />
+
+    </com.aqrlei.widget.ShadowLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
