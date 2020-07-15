@@ -1,6 +1,5 @@
 plugins {
     id("com.aqrlei.plugin.component")
-    id("com.aqrlei.plugin.depDeduplicate")
     kotlin("android")
     kotlin("android.extensions")
     kotlin("kapt")

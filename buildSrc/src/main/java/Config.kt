@@ -40,8 +40,7 @@ object ClassPath {
     const val dokka = "org.jetbrains.dokka:dokka-android-gradle-plugin:0.9.18"
     const val image_convert = "com.aqrlei.plugin:ImageConvert:1.0.0-beta01"
     const val component = "com.aqrlei.plugin:Component:1.0.0-beta01"
-    const val dep_deduplicate = "com.aqrlei.plugin:DepDeduplicate:1.0.0-alpha23"
-    const val lifecycle = "com.aqrlei.plugin:LifecycleObserver:1.0.0-alpha02"
+    const val lifecycle = "com.aqrlei.plugin:LifecycleObserver:1.0.0-alpha05"
 }
 
 class Lib {

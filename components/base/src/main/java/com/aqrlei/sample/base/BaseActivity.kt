@@ -32,6 +32,10 @@ abstract class BaseActivity : AppCompatActivity(), IPage {
         onVisibleTime = System.currentTimeMillis()
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+    }
+
     override fun onPause() {
         super.onPause()
         referPageName = getPageName()
