@@ -1,4 +1,4 @@
-package com.aqrlei.widget.guide.lifecycle
+package com.aqrlei.widgets.guide.lifecycle
 
 import java.io.Serializable
 
@@ -13,7 +13,8 @@ interface LifecycleListener : Serializable {
     fun onDestroy()
 }
 
-open class SimpleLifecycleListener : LifecycleListener {
+open class SimpleLifecycleListener :
+    LifecycleListener {
     override fun onStart() {}
 
     override fun onStop() {}

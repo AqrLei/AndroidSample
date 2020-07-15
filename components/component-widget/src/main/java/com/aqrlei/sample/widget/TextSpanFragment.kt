@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.aqrlei.helper.DensityHelper
 import com.aqrlei.sample.base.BaseFragment
-import com.aqrlei.widget.span.BackgroundShapeSpan
+import com.aqrlei.widgets.span.BackgroundShapeSpan
 import kotlinx.android.synthetic.main.frag_textspan.*
 
 /**

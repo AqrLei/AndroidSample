@@ -1,4 +1,4 @@
-package com.aqrlei.widget.ext
+package com.aqrlei.widgets.ext
 
 import android.view.View
 import com.aqrlei.helper.ToastHelper

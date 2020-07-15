@@ -1,4 +1,4 @@
-package com.aqrlei.widget.guide.core
+package com.aqrlei.widgets.guide.core
 
 import android.graphics.Canvas
 import android.graphics.Rect
@@ -18,7 +18,8 @@ class Hole {
     var paddingRight: Int = 0
     var paddingBottom: Int = 0
 
-    var shape: Shape = Shape.RECTANGLE
+    var shape: Shape =
+        Shape.RECTANGLE
 
     /**
      * [Hole.Shape.CIRCLE] radius 为半径
@@ -71,7 +72,8 @@ class Hole {
     }
 
     fun setOnClickListener(block: (controller: Controller?, v: View?) -> Unit) {
-        onClickListener = object : OnHoleClickListener {
+        onClickListener = object :
+            OnHoleClickListener {
             override fun onHoleClickListener(controller: Controller?, view: View?) {
                 block(controller, view)
             }
@@ -80,7 +82,8 @@ class Hole {
 
 
     fun onHighlightDrewListener(block: (Canvas, RectF) -> Unit) {
-        onHighlightDrewListener = object : OnHighlightDrewListener {
+        onHighlightDrewListener = object :
+            OnHighlightDrewListener {
             override fun onHighlightDrew(canvas: Canvas, rectF: RectF) {
                 block(canvas, rectF)
             }

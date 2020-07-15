@@ -1,4 +1,4 @@
-package com.aqrlei.widget.guide.core
+package com.aqrlei.widgets.guide.core
 
 import android.view.View
 import android.view.animation.Animation
@@ -39,7 +39,8 @@ class Overlay {
     }
 
     fun onOverlayInflatedListener(block: (View, Controller) -> Unit) {
-        onOverlayInflatedListener = object : OnOverlayInflatedListener {
+        onOverlayInflatedListener = object :
+            OnOverlayInflatedListener {
             override fun onOverlayInflated(view: View, controller: Controller) {
                 block(view, controller)
             }

@@ -1,4 +1,4 @@
-package com.aqrlei.widget.span
+package com.aqrlei.widgets.span
 
 import android.graphics.Canvas
 import android.graphics.Color
@@ -17,7 +17,8 @@ class BackgroundShapeSpan @JvmOverloads constructor(
     private val cornerRadius: Float = 0F,
     private val paddingStart: Int = 0,
     private val paddingEnd: Int = 0,
-    private val style: Style = Style.STROKE) : ReplacementSpan() {
+    private val style: Style = Style.STROKE
+) : ReplacementSpan() {
     private val mBgPaint: Paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
     override fun getSize(

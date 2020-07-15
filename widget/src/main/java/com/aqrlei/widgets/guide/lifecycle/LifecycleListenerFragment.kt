@@ -1,4 +1,4 @@
-package com.aqrlei.widget.guide.lifecycle
+package com.aqrlei.widgets.guide.lifecycle
 
 import androidx.fragment.app.Fragment
 

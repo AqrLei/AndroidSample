@@ -1,11 +1,11 @@
-package com.aqrlei.widget.guide.core
+package com.aqrlei.widgets.guide.core
 
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
-import com.aqrlei.widget.guide.lifecycle.LifecycleListenerFragment
-import com.aqrlei.widget.guide.lifecycle.SimpleLifecycleListener
+import com.aqrlei.widgets.guide.lifecycle.LifecycleListenerFragment
+import com.aqrlei.widgets.guide.lifecycle.SimpleLifecycleListener
 
 /**
  * Created by AqrLei on 2019-08-20
@@ -49,7 +49,11 @@ class Controller(private val builder: Builder) {
     }
 
     private fun showGuidePage(guidePage: GuidePage) {
-        guideLayout = GuideLayout(builder.activity, guidePage, this).apply {
+        guideLayout = GuideLayout(
+            builder.activity,
+            guidePage,
+            this
+        ).apply {
             setOnGuideLayoutDismissListener {
                 builder.onGuideChangedListener?.onRemoved(this@Controller)
             }
@@ -76,7 +80,8 @@ class Controller(private val builder: Builder) {
         var fragment =
             fm.findFragmentByTag(LIFECYCLE_LISTENER_FRAGMENT) as? LifecycleListenerFragment
         if (fragment == null) {
-            fragment = LifecycleListenerFragment()
+            fragment =
+                LifecycleListenerFragment()
             fm.beginTransaction().add(
                 fragment,
                 LIFECYCLE_LISTENER_FRAGMENT

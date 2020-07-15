@@ -1,4 +1,4 @@
-package com.aqrlei.widget.guide.core
+package com.aqrlei.widgets.guide.core
 
 import android.graphics.Canvas
 import android.graphics.RectF
@@ -54,7 +54,8 @@ class GuidePage {
     }
 
     fun overlayWithHoleDrawListener(block: (Controller?, View?, Canvas?, RectF?) -> Unit) {
-        overlayWithHoleDrawListener = object : OverlayWithHoleDrawListener {
+        overlayWithHoleDrawListener = object :
+            OverlayWithHoleDrawListener {
             override fun overlayWithHoleListener(
                 guideController: Controller?,
                 overlayView: View?,

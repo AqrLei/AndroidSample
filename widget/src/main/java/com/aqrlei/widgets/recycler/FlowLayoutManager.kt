@@ -1,4 +1,4 @@
-package com.aqrlei.widget.recycler
+package com.aqrlei.widgets.recycler
 
 import android.graphics.Rect
 import android.util.SparseArray

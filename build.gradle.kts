@@ -8,6 +8,7 @@ buildscript {
         classpath(ClassPath.image_convert)
         classpath(ClassPath.component)
         classpath(ClassPath.dep_deduplicate)
+        classpath(ClassPath.lifecycle)
     }
 }
 

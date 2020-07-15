@@ -1,4 +1,4 @@
-package com.aqrlei.widget.guide.lifecycle
+package com.aqrlei.widgets.guide.lifecycle
 
 /**
  * Created by AqrLei on 2019-08-23

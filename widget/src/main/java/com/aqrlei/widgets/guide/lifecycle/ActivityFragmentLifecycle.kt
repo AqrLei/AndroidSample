@@ -1,11 +1,12 @@
-package com.aqrlei.widget.guide.lifecycle
+package com.aqrlei.widgets.guide.lifecycle
 
 /**
  * Created by AqrLei on 2019-08-23
  */
 class ActivityFragmentLifecycle : Lifecycle {
     private val lifecycleListenerList = mutableListOf<LifecycleListener>()
-    private var lifecycleStateEnum: LifecycleStateEnum = LifecycleStateEnum.NONE
+    private var lifecycleStateEnum: LifecycleStateEnum =
+        LifecycleStateEnum.NONE
     override fun addLifecycleListener(lifecycleListener: LifecycleListener) {
         lifecycleListenerList.add(lifecycleListener)
         when (lifecycleStateEnum) {
@@ -26,17 +27,20 @@ class ActivityFragmentLifecycle : Lifecycle {
     }
 
     fun onStart() {
-        lifecycleStateEnum = LifecycleStateEnum.START
+        lifecycleStateEnum =
+            LifecycleStateEnum.START
         lifecycleListenerList.forEach { it.onStart() }
     }
 
     fun onStop() {
-        lifecycleStateEnum = LifecycleStateEnum.STOP
+        lifecycleStateEnum =
+            LifecycleStateEnum.STOP
         lifecycleListenerList.forEach { it.onStop() }
     }
 
     fun onDestroy() {
-        lifecycleStateEnum = LifecycleStateEnum.DESTROY
+        lifecycleStateEnum =
+            LifecycleStateEnum.DESTROY
         lifecycleListenerList.forEach { it.onDestroy() }
     }
 }

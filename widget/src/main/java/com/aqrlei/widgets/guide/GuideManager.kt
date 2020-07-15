@@ -1,8 +1,8 @@
-package com.aqrlei.widget.guide
+package com.aqrlei.widgets.guide
 
 import android.app.Activity
 import androidx.fragment.app.Fragment
-import com.aqrlei.widget.guide.core.Builder
+import com.aqrlei.widgets.guide.core.Builder
 
 /**
  * Created by AqrLei on 2019-08-20

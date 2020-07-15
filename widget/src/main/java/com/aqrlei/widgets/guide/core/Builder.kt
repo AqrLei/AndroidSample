@@ -1,4 +1,4 @@
-package com.aqrlei.widget.guide.core
+package com.aqrlei.widgets.guide.core
 
 import android.app.Activity
 import androidx.fragment.app.Fragment
@@ -23,7 +23,8 @@ class Builder {
     }
 
     fun onGuideChanged(onShowed: (Controller) -> Unit, onRemoved: (Controller) -> Unit) {
-        onGuideChangedListener = object : Controller.OnGuideChangedListener {
+        onGuideChangedListener = object :
+            Controller.OnGuideChangedListener {
             override fun onShowed(controller: Controller) {
                 onShowed(controller)
             }
@@ -39,7 +40,8 @@ class Builder {
         guidePage = GuidePage().apply(block)
     }
 
-    fun build(): Controller = Controller(this)
+    fun build(): Controller =
+        Controller(this)
     fun show(): Controller {
         return Controller(this).apply {
             show()

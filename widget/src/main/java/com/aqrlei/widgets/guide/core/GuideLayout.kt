@@ -1,4 +1,4 @@
-package com.aqrlei.widget.guide.core
+package com.aqrlei.widgets.guide.core
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -86,7 +86,8 @@ internal class GuideLayout(
     }
 
     fun setOnGuideLayoutDismissListener(block: (GuideLayout) -> Unit) {
-        onGuideLayoutDismissListener = object : OnGuideLayoutDismissListener {
+        onGuideLayoutDismissListener = object :
+            OnGuideLayoutDismissListener {
             override fun onGuideLayoutDismiss(guideLayout: GuideLayout) {
                 block(guideLayout)
             }
