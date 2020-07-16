@@ -4,6 +4,7 @@ plugins {
     kotlin("android.extensions")
     kotlin("kapt")
     id("com.aqrlei.plugin.imageConvert")
+    id("com.aqrlei.plugin.lifecycleobserver")
 }
 
 android {

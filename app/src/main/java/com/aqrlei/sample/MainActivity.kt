@@ -1,6 +1,7 @@
 package com.aqrlei.sample
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -14,6 +15,11 @@ class MainActivity : BaseActivity() {
 
     override fun getLayoutId(): Int = R.layout.main_activity
 
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("AqrLei","test")
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setSupportActionBar(toolbar)
@@ -49,5 +55,6 @@ class MainActivity : BaseActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return super.onOptionsItemSelected(item)
     }
+
 
 }

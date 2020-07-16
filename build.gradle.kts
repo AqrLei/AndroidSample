@@ -7,6 +7,7 @@ buildscript {
         classpath(ClassPath.kotlin_gradle)
         classpath(ClassPath.image_convert)
         classpath(ClassPath.component)
+        classpath(ClassPath.lifecycle)
     }
 }
 
