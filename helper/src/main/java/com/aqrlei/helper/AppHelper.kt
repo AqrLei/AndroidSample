@@ -32,8 +32,7 @@ object AppHelper {
     fun checkClip(
         context: Context,
         delayTime: Long = 500,
-        block: (clipData: ClipData?, clipDes: ClipDescription?) -> Unit
-    ) {
+        block: (clipData: ClipData?, clipDes: ClipDescription?) -> Unit) {
         mainHandler.postDelayed({
             (context.getSystemService(ContextThemeWrapper.CLIPBOARD_SERVICE) as? ClipboardManager)?.let {
                 block(it.primaryClip, it.primaryClipDescription)

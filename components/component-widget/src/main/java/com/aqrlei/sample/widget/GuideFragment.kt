@@ -9,9 +9,9 @@ import android.view.animation.AnimationUtils
 import com.aqrlei.helper.DensityHelper
 import com.aqrlei.helper.log.LogHelper
 import com.aqrlei.sample.base.BaseFragment
-import com.aqrlei.widgets.guide.GuideManager
-import com.aqrlei.widgets.guide.core.Controller
-import com.aqrlei.widgets.guide.core.Hole
+import com.aqrlei.guide.GuideManager
+import com.aqrlei.guide.core.Controller
+import com.aqrlei.guide.core.Hole
 import kotlinx.android.synthetic.main.frag_guide.*
 
 /**

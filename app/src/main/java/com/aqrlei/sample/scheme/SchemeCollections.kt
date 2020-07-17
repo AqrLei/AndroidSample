@@ -4,7 +4,7 @@ import android.net.Uri
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.aqrlei.helper.ToastHelper
+import com.aqrlei.helper.toast.ToastHelper
 import com.aqrlei.sample.BuildConfig
 import com.aqrlei.sample.helper.*
 import com.aqrlei.sample.helper.net.NetFragment

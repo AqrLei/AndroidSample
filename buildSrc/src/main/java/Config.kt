@@ -46,7 +46,8 @@ object ClassPath {
 class Lib {
     val bannerView = "com.aqrlei.lib:bannerview:1.0.0-beta03"
     val logHelper = "com.aqrlei.lib:loghelper:1.0.0-beta02"
-    val widget_collection= "com.aqrlei.lib:widget-collection:1.0.0-alpha01"
+    val widget_collection= "com.aqrlei.lib:widget-collection:1.0.0-alpha02"
+    val guide = "com.aqrlei.lib:guide:1.0.0-alpha01"
 }
 
 object Deps {

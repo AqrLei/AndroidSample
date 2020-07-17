@@ -70,7 +70,8 @@ dependencies {
 
     implementation(Deps.lib.bannerView)
     implementation(Deps.lib.widget_collection)
-    api(project(":widget"))
+    api(Deps.lib.guide)
+
     api(project(":helper"))
     api(project(":base"))
 }

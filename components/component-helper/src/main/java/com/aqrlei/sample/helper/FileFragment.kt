@@ -19,6 +19,7 @@ import com.aqrlei.helper.net.OkHttpHelper
 import com.aqrlei.helper.net.OkHttpRequest
 import com.aqrlei.helper.net.exception.CancelException
 import com.aqrlei.helper.net.transformer.MediaUriTransFormer
+import com.aqrlei.helper.toast.ToastHelper
 import com.aqrlei.sample.base.BaseFragment
 import kotlinx.android.synthetic.main.frag_file.*
 import kotlinx.coroutines.Job

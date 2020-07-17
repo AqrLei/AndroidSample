@@ -10,10 +10,28 @@ class SimpleCustomTimer(
     private val maxMillis: Long,
     private val onTimerListener: OnTimerListener,
     private var intervalTime: Long = DEFAULT_INTERVAL_TIME,
-    private val isCountDown: Boolean = true
-) : Runnable {
+    private val isCountDown: Boolean = true) : Runnable {
     companion object {
         private const val DEFAULT_INTERVAL_TIME = 1000L
+        fun getInstance(
+            maxMillis: Long,
+            onTimer: (Long) -> Unit,
+            onStart: (() -> Unit)? = null,
+            onComplete: (() -> Unit)? = null): SimpleCustomTimer {
+            return SimpleCustomTimer(maxMillis, object : SimpleCustomTimer.OnTimerListener {
+                override fun onStart(countDown: Boolean) {
+                    onStart?.invoke()
+                }
+
+                override fun onNext(currentTime: Long, countDown: Boolean) {
+                    onTimer(currentTime)
+                }
+
+                override fun onComplete(countDown: Boolean) {
+                    onComplete?.invoke()
+                }
+            })
+        }
     }
 
     private var isRunning: Boolean = false

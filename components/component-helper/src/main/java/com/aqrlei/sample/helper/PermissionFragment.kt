@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.aqrlei.helper.ToastHelper
+import com.aqrlei.helper.toast.ToastHelper
 import com.aqrlei.helper.permission.*
 import com.aqrlei.sample.base.BaseFragment
 import kotlinx.android.synthetic.main.frag_permission.*

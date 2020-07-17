@@ -7,7 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.aqrlei.helper.log.LogHelper
 import com.aqrlei.sample.base.BaseFragment
+import com.google.android.material.snackbar.BaseTransientBottomBar
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.frag_test.*
 
 /**
@@ -38,7 +41,29 @@ class TestFragment : BaseFragment() {
                 position == testData.indexOf(element)
             } else false
         })
+        tvTestButton.setOnClickListener {
+            showSnackBar()
+        }
 
+    }
+
+    private fun showSnackBar(){
+        Snackbar.make(llTestFrag,"这是一个测试",Snackbar.LENGTH_INDEFINITE)
+            .addCallback(object: Snackbar.Callback(){
+                override fun onShown(sb: Snackbar?) {
+                    super.onShown(sb)
+                    LogHelper.d("Snackbar onShow")
+                }
+
+                override fun onDismissed(transientBottomBar: Snackbar?, event: Int) {
+                    super.onDismissed(transientBottomBar, event)
+                    LogHelper.d("Snackbar onDismiss")
+                }
+            })
+            .setAction("Action") {
+                LogHelper.d("Snackbar onAction")
+            }
+            .show()
     }
 
     inner class TestAdapter : RecyclerView.Adapter<TestHolder>() {

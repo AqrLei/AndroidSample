@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.aqrlei.sample.BaseContainerFragment.ExampleType
-import com.aqrlei.widgets.ext.setOnAvoidFastClickListener
+import com.aqrlei.widget.ext.setOnAvoidFastClickListener
 
 class SimpleItemAdapter(type: Int?) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

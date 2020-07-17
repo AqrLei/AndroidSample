@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
 import com.aqrlei.helper.DensityHelper
-import com.aqrlei.helper.ToastHelper
+import com.aqrlei.helper.toast.ToastHelper
 import com.aqrlei.helper.log.LogHelper
 import com.aqrlei.sample.widget.R
 import com.aqrlei.sample.base.BaseFragment

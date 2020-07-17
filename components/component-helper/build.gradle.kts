@@ -46,6 +46,7 @@ dependencies {
     implementation(Deps.androidx.constraint)
     implementation(Deps.androidx.recyclerview)
     implementation(Deps.androidx.core_ktx)
+    api(Deps.material)
 
     implementation(Deps.zxing)
     implementation(Deps.gson)

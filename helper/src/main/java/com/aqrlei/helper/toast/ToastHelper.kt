@@ -1,7 +1,6 @@
-package com.aqrlei.helper
+package com.aqrlei.helper.toast
 
 import com.aqrlei.helper.init.ContextInitHelper
-import com.aqrlei.helper.toast.ToastWrapper
 
 /**
  * created by AqrLei on 2020/3/17
@@ -20,12 +19,20 @@ object ToastHelper {
 
     @JvmStatic
     fun shortShow(resId: Int) {
-        shortShow(ContextInitHelper.getString(resId))
+        shortShow(
+            ContextInitHelper.getString(
+                resId
+            )
+        )
     }
 
     @JvmStatic
     fun shortShow(resId: Int, type: Int) {
-        shortShow(ContextInitHelper.getString(resId), type)
+        shortShow(
+            ContextInitHelper.getString(
+                resId
+            ), type
+        )
     }
 
 
@@ -41,11 +48,19 @@ object ToastHelper {
 
     @JvmStatic
     fun longShow(resId: Int) {
-        longShow(ContextInitHelper.getString(resId))
+        longShow(
+            ContextInitHelper.getString(
+                resId
+            )
+        )
     }
 
     @JvmStatic
     fun longShow(resId: Int, type: Int) {
-        longShow(ContextInitHelper.getString(resId), type)
+        longShow(
+            ContextInitHelper.getString(
+                resId
+            ), type
+        )
     }
 }

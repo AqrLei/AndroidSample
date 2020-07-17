@@ -44,8 +44,8 @@ object DensityHelper {
     fun px2dp(pxValue: Int): Float {
         return pxValue / Resources.getSystem().displayMetrics.density
     }
+
     fun screenWidth(): Int = metrics.widthPixels
 
     fun screenHeight(): Int = metrics.heightPixels
-
 }
