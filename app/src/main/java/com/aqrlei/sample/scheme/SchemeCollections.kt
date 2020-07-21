@@ -4,7 +4,6 @@ import android.net.Uri
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.aqrlei.helper.toast.ToastHelper
 import com.aqrlei.sample.BuildConfig
 import com.aqrlei.sample.helper.*
 import com.aqrlei.sample.helper.net.NetFragment
@@ -13,6 +12,7 @@ import com.aqrlei.sample.widget.banner.Banner2Fragment
 import com.aqrlei.sample.widget.banner.BannerFragment
 import com.aqrlei.sample.widget.banner.BannerTestFragment
 import com.aqrlei.sample.widget.BannerDispatchFragment
+import com.aqrlei.util.toast.ToastHelper
 
 /**
  * created by AqrLei on 2020/5/22

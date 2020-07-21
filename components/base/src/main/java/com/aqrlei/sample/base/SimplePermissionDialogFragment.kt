@@ -1,11 +1,12 @@
-package com.aqrlei.helper.permission
+package com.aqrlei.sample.base
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.aqrlei.helper.R
+import com.aqrlei.permission.PermissionProxyDialogFragment
+import com.aqrlei.permission.PermissionsNeededModule
 import kotlinx.android.synthetic.main.permission_item_recycler.view.*
 import kotlinx.android.synthetic.main.permission_simple_dialog.*
 

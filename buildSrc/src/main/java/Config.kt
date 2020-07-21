@@ -47,7 +47,12 @@ class Lib {
     val bannerView = "com.aqrlei.lib:bannerview:1.0.0-beta03"
     val logHelper = "com.aqrlei.lib:loghelper:1.0.0-beta02"
     val widget_collection= "com.aqrlei.lib:widget-collection:1.0.0-alpha02"
+    val util_collection = "com.aqrlei.lib:util-collection:1.0.0-alpha02"
     val guide = "com.aqrlei.lib:guide:1.0.0-alpha01"
+    val permission = "com.aqrlei.lib:permission:1.0.0-alpha01"
+    val cache = "com.aqrlei.lib:cache:1.0.0-alpha01"
+    val net = "com.aqrlei.lib:net:1.0.0-alpha01"
+    val imageHandler = "com.aqrlei.lib:image-handler:1.0.0-alpha01"
 }
 
 object Deps {

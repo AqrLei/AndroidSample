@@ -7,12 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import com.aqrlei.helper.CacheFileHelper
-import com.aqrlei.helper.cache.lru.LruCacheConfig
-import com.aqrlei.helper.cache.lru.LruCacheHelper
-import com.aqrlei.helper.imagehandler.ImageHandleHelper
-import com.aqrlei.helper.imagehandler.decorator.ShapeImageDecorator
+import com.aqrlei.cache.lru.LruCacheConfig
+import com.aqrlei.cache.lru.LruCacheHelper
+import com.aqrlei.imagehandler.ImageHandleHelper
+import com.aqrlei.imagehandler.decorator.ShapeImageDecorator
 import com.aqrlei.sample.base.BaseFragment
+import com.aqrlei.util.CacheFileUtil
 import kotlinx.android.synthetic.main.frag_imagehandler.*
 
 /**
@@ -59,7 +59,7 @@ class ImageFragment : BaseFragment() {
 
     private val reqImgCode = 0x11
     private fun loadLocalFileImage(v: View) {
-        CacheFileHelper.getFileContent(null, this, reqImgCode, "image/*")
+        CacheFileUtil.getFileContent(null, this, reqImgCode, "image/*")
     }
 
     private fun loadRemoteImage(v: View) {

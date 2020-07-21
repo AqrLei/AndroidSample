@@ -11,16 +11,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.aqrlei.helper.*
-import com.aqrlei.helper.coroutine.coroutineCancellableRunLazy
-import com.aqrlei.helper.coroutine.coroutineRunLazy
+import com.aqrlei.util.ext.coroutineCancellableRunLazy
+import com.aqrlei.util.ext.coroutineRunLazy
 import com.aqrlei.helper.log.LogHelper
-import com.aqrlei.helper.net.OkHttpHelper
-import com.aqrlei.helper.net.OkHttpRequest
-import com.aqrlei.helper.net.exception.CancelException
-import com.aqrlei.helper.net.transformer.MediaUriTransFormer
-import com.aqrlei.helper.toast.ToastHelper
+import com.aqrlei.net.OkHttpHelper
+import com.aqrlei.net.OkHttpRequest
+import com.aqrlei.net.exception.CancelException
+import com.aqrlei.net.transformer.MediaUriTransFormer
 import com.aqrlei.sample.base.BaseFragment
+import com.aqrlei.sample.base.ImageHelper
+import com.aqrlei.util.CacheFileUtil
+import com.aqrlei.util.ext.toMd5
+import com.aqrlei.util.toast.ToastHelper
 import kotlinx.android.synthetic.main.frag_file.*
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -95,8 +97,8 @@ class FileFragment : BaseFragment(), View.OnClickListener {
                     val file = File.createTempFile(
                         "bitmapllbg",
                         ".jpg",
-                        CacheFileHelper.getAppFilesDirFile(it, "images"))
-                    CacheFileHelper.saveBitmap(bitmap, file) { resultFile ->
+                        CacheFileUtil.getAppFilesDirFile(it, "images"))
+                    CacheFileUtil.saveBitmap(bitmap, file) { resultFile ->
                         resultFile?.let {
                             ToastHelper.shortShow("${resultFile.absolutePath} 保存成功")
                         }
@@ -105,22 +107,22 @@ class FileFragment : BaseFragment(), View.OnClickListener {
 
             }
             R.id.tvPick -> {
-                CacheFileHelper.pickFileItem(null, this, reqCode, "image/*")
+                CacheFileUtil.pickFileItem(null, this, reqCode, "image/*")
 
                 lazyJob?.start()
                 cancellableJob?.start()
 //                cancellableJob?.cancel()
             }
             R.id.tvGetContent -> {
-                CacheFileHelper.getFileContent(null, this, reqCode, "image/*")
+                CacheFileUtil.getFileContent(null, this, reqCode, "image/*")
             }
             R.id.tvDocument -> {
-                CacheFileHelper.performFileSearch(null, this, reqCode)
+                CacheFileUtil.performFileSearch(null, this, reqCode)
             }
             R.id.tvMediaStoreImage -> {
                 context?.let { ct ->
-                    val fileName = "${StringHelper.md5Encode(downloadPng)}.png"
-                    val uri = CacheFileHelper.createMediaStoreImageUri(
+                    val fileName = "${downloadPng.toMd5()}.png"
+                    val uri = CacheFileUtil.createMediaStoreImageUri(
                         ct.contentResolver,
                         fileName,
                         "image/png",
@@ -149,8 +151,8 @@ class FileFragment : BaseFragment(), View.OnClickListener {
             }
             R.id.tvMediaStoreVideo -> {
                 context?.let { ct ->
-                    val fileName = "${StringHelper.md5Encode(downloadMp4)}.mp4"
-                    val uri = CacheFileHelper.createMediaStoreVideoUri(
+                    val fileName = "${downloadMp4.toMd5()}.mp4"
+                    val uri = CacheFileUtil.createMediaStoreVideoUri(
                         ct.contentResolver,
                         fileName,
                         "video/mp4",

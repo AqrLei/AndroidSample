@@ -7,14 +7,14 @@ import android.view.*
 import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
-import com.aqrlei.helper.DensityHelper
-import com.aqrlei.helper.toast.ToastHelper
 import com.aqrlei.helper.log.LogHelper
 import com.aqrlei.sample.widget.R
 import com.aqrlei.sample.base.BaseFragment
 import com.aqrlei.bannerview.widget.BannerView
 import com.aqrlei.bannerview.widget.indicator.FigureIndicatorView
 import com.aqrlei.bannerview.widget.banner2.BannerView2
+import com.aqrlei.util.DensityUtil
+import com.aqrlei.util.toast.ToastHelper
 import com.google.android.exoplayer2.C
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.SimpleExoPlayer
@@ -152,7 +152,7 @@ class BannerTestFragment : BaseFragment() {
 
         view.findViewById<BannerView2>(R.id.bannerView2).apply {
             indicatorView = FigureIndicatorView(this@BannerTestFragment.context!!).also {
-                val dp6 = DensityHelper.dp2px(6F)
+                val dp6 = DensityUtil.dp2px(6F)
                 it.setPadding(dp6, dp6 / 2, dp6, dp6 / 2)
             }
             adapter = bannerAdapter2

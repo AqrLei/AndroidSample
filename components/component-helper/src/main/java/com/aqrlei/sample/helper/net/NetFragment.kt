@@ -7,17 +7,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.aqrlei.helper.CacheFileHelper
-import com.aqrlei.helper.ImageHelper
-import com.aqrlei.helper.toast.ToastHelper
-import com.aqrlei.helper.coroutine.coroutineRun
+import com.aqrlei.sample.base.ImageHelper
+import com.aqrlei.util.ext.coroutineRun
 import com.aqrlei.helper.log.LogHelper
-import com.aqrlei.helper.net.IHttpCallback
-import com.aqrlei.helper.net.OkHttpHelper
-import com.aqrlei.helper.net.OkHttpRequest
-import com.aqrlei.helper.net.transformer.FileTransformer
+import com.aqrlei.net.IHttpCallback
+import com.aqrlei.net.OkHttpHelper
+import com.aqrlei.net.OkHttpRequest
+import com.aqrlei.net.transformer.FileTransformer
 import com.aqrlei.sample.base.BaseFragment
 import com.aqrlei.sample.helper.R
+import com.aqrlei.util.CacheFileUtil
+import com.aqrlei.util.toast.ToastHelper
 import com.squareup.moshi.Types
 import kotlinx.android.synthetic.main.frag_net.*
 import okhttp3.Response
@@ -111,7 +111,7 @@ class NetFragment : BaseFragment(), View.OnClickListener {
                 download()
             }
             R.id.tvUpload -> {
-                CacheFileHelper.pickFileItem(null, this, reqCode, "image/*")
+                CacheFileUtil.pickFileItem(null, this, reqCode, "image/*")
             }
         }
     }
@@ -137,10 +137,10 @@ class NetFragment : BaseFragment(), View.OnClickListener {
         if (requestCode == reqCode && resultCode == Activity.RESULT_OK) {
             context?.let {
                 data?.data?.let { uri ->
-                    val dir = CacheFileHelper.getAppFilesDirFile(it, "images")
+                    val dir = CacheFileUtil.getAppFilesDirFile(it, "images")
                     val file = File.createTempFile("test", ".jpg", dir)
                     coroutineRun(backgroundBlock = {
-                        CacheFileHelper.writeFileFromUri(it, file, uri)
+                        CacheFileUtil.writeFileFromUri(it, file, uri)
                     }, resultCallback = { result ->
                         LogHelper.d("AqrLei", "file : ${result?.absolutePath ?: "empty"}")
                         upload(result)
@@ -148,7 +148,7 @@ class NetFragment : BaseFragment(), View.OnClickListener {
                 }
 
                 LogHelper.d("AqrLei", "${data?.data}")
-                ImageHelper.getBitmapFromUri(it, data?.data) { bitmap ->
+                    ImageHelper.getBitmapFromUri(it, data?.data) { bitmap ->
                     llBg.background = BitmapDrawable(bitmap)
                 }
             }
@@ -167,7 +167,7 @@ class NetFragment : BaseFragment(), View.OnClickListener {
                     super.onBackground(response)
                     val transformer = FileTransformer(
                         "qexdTest", ".apk",
-                        CacheFileHelper.getAppFilesDirFile(it, "apk"), this)
+                        CacheFileUtil.getAppFilesDirFile(it, "apk"), this)
                     return response.body?.let { body ->
                         transformer.transformer(body, File::class.java)
                     }

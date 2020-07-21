@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
-import com.aqrlei.helper.DensityHelper
 import com.aqrlei.helper.log.LogHelper
 import com.aqrlei.sample.base.BaseFragment
 import com.aqrlei.guide.GuideManager
 import com.aqrlei.guide.core.Controller
 import com.aqrlei.guide.core.Hole
+import com.aqrlei.util.DensityUtil
 import kotlinx.android.synthetic.main.frag_guide.*
 
 /**
@@ -66,7 +66,7 @@ class GuideFragment : BaseFragment() {
                 }
                 hole {
                     holeView = shadowLayout
-                    setPadding(DensityHelper.dip2px(5F))
+                    setPadding(DensityUtil.dip2px(5F))
                     shape = Hole.Shape.CIRCLE
                     onHighlightDrewListener { canvas, rectF ->
                         log("onHighlightDrew - ${controller?.isGuidePageShow()}")

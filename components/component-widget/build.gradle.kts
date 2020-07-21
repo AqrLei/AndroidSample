@@ -57,10 +57,10 @@ dependencies {
     implementation(Deps.exoplayer.smoothStreaming)
     implementation(Deps.exoplayer.ui)
 
-    api(Deps.okhttp.okhttp)
-    api(Deps.okhttp.logging)
-    api(Deps.moshi.moshi)
-    api(Deps.moshi.moshi_kotlin)
+    implementation(Deps.okhttp.okhttp)
+    implementation(Deps.okhttp.logging)
+    implementation(Deps.moshi.moshi)
+    implementation(Deps.moshi.moshi_kotlin)
     kapt(Deps.moshi.moshi_kotlin_codegen)
     debugImplementation(Deps.leakCanary)
 
@@ -68,11 +68,7 @@ dependencies {
     testImplementation(Deps.androidx.junit_ext)
     testImplementation(Deps.androidx.junit_ktx_ext)
 
-    implementation(Deps.lib.bannerView)
-    implementation(Deps.lib.widget_collection)
-    api(Deps.lib.guide)
 
-    api(project(":helper"))
     api(project(":base"))
 }
 

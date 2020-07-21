@@ -1,5 +1,5 @@
 
-include (":app", ":helper")
+include (":app")
 
 includeModules(arrayOf("component-helper","component-widget","base"),"components")
 

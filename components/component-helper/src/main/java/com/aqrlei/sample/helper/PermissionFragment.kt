@@ -6,9 +6,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.aqrlei.helper.toast.ToastHelper
-import com.aqrlei.helper.permission.*
+import com.aqrlei.sample.base.SimplePermissionDialogFragment
+import com.aqrlei.permission.*
 import com.aqrlei.sample.base.BaseFragment
+import com.aqrlei.util.toast.ToastHelper
 import kotlinx.android.synthetic.main.frag_permission.*
 
 /**
@@ -35,7 +36,8 @@ class PermissionFragment : BaseFragment() {
                         arrayListOf(Manifest.permission.CAMERA, Manifest.permission.CALL_PHONE)
                     )
                 ) {
-                    SimplePermissionDialogFragment().apply {
+                    SimplePermissionDialogFragment()
+                        .apply {
                         arguments = PermissionProxyDialogFragment.bundleNeedPermissions(
                             PermissionNeeded(Manifest.permission.CAMERA, "相机权限"),
                             PermissionNeeded(Manifest.permission.CALL_PHONE, "电话权限"),

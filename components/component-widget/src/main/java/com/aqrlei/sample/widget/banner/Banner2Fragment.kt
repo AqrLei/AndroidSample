@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
-import com.aqrlei.helper.DensityHelper
 import com.aqrlei.helper.log.LogHelper
 import com.aqrlei.sample.base.BaseFragment
 import com.aqrlei.sample.widget.R
 import com.aqrlei.bannerview.widget.indicator.FigureIndicatorView
 import com.aqrlei.bannerview.widget.banner2.BannerView2
+import com.aqrlei.util.DensityUtil
 import kotlinx.android.synthetic.main.view_banner_item.view.*
 
 /**
@@ -75,13 +75,13 @@ class Banner2Fragment : BaseFragment() {
         v.findViewById(R.id.bannerView2Gone),
         v.findViewById<BannerView2>(R.id.bannerView2Below).apply {
             indicatorView = FigureIndicatorView(context).also {
-                val dp6 = DensityHelper.dp2px(6F)
+                val dp6 = DensityUtil.dp2px(6F)
                 it.setPadding(dp6, dp6 / 2, dp6, dp6 / 2)
             }
         },
         v.findViewById<BannerView2>(R.id.bannerView2Inside).apply {
             indicatorView = FigureIndicatorView(context).also {
-                val dp6 = DensityHelper.dp2px(6F)
+                val dp6 = DensityUtil.dp2px(6F)
                 it.setPadding(dp6, dp6 / 2, dp6, dp6 / 2)
             }
         },

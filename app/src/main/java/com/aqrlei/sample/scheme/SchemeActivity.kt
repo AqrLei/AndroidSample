@@ -4,12 +4,11 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
-import com.aqrlei.helper.AppHelper
 import com.aqrlei.helper.log.LogHelper
 import com.aqrlei.sample.base.BaseActivity
 import com.aqrlei.sample.PageItemDescription
 import com.aqrlei.sample.R
+import com.aqrlei.util.AppUtil
 import java.util.*
 
 /**
@@ -23,7 +22,7 @@ class SchemeActivity : BaseActivity() {
             context?.let {
                 val intent =
                     Intent(Intent.ACTION_VIEW, Uri.parse(path)).putExtra(KEY_PAGE_DATA, data)
-                if (AppHelper.queryActivities(it, intent)) {
+                if (AppUtil.queryActivities(it, intent)) {
                     context.startActivity(intent)
                 }
             }

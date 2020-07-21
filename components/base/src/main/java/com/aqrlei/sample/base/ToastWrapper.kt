@@ -1,10 +1,10 @@
-package com.aqrlei.helper.toast
+package com.aqrlei.sample.base
 
 import android.view.Gravity
 import android.view.View
 import android.widget.Toast
-import com.aqrlei.helper.R
-import com.aqrlei.helper.init.ContextInitHelper
+import com.aqrlei.util.ContextInitUtil
+import com.aqrlei.util.toast.BaseToast
 import kotlinx.android.synthetic.main.toast.view.*
 
 /**
@@ -19,7 +19,7 @@ object ToastWrapper : BaseToast() {
     override fun getTextViewID(type: Int?): Int = R.id.tvToast
 
     internal object NormalToast {
-        val instance = ContextInitHelper.getContext().let { context ->
+        val instance = ContextInitUtil.getContext()?.let { context ->
             val view = View.inflate(context, R.layout.toast, null)
             val w = context.resources.displayMetrics.widthPixels
             val h = context.resources.displayMetrics.heightPixels
@@ -30,7 +30,7 @@ object ToastWrapper : BaseToast() {
                 it.view = view
                 it.setGravity(Gravity.BOTTOM, 0, h/8)
             }
-        }
+        }?:throw NullPointerException("Must invoking ContextInitUtil.doInit() first")
     }
 
     internal object WarningToast {
