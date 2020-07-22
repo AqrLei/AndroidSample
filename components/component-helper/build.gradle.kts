@@ -47,9 +47,7 @@ dependencies {
     implementation(Deps.androidx.recyclerview)
     implementation(Deps.androidx.core_ktx)
 
-    implementation(Deps.zxing)
     implementation(Deps.gson)
-
 
     implementation(Deps.okhttp.okhttp)
     implementation(Deps.okhttp.logging)

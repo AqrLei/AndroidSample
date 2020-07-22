@@ -41,15 +41,11 @@ dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar","*.aar"))))
 
     implementation(Deps.kotlin.stdlib)
-    implementation(Deps.kotlin.coroutines)
 
     implementation(Deps.androidx.appcompat)
     implementation(Deps.androidx.constraint)
     implementation(Deps.androidx.recyclerview)
     implementation(Deps.androidx.core_ktx)
-
-    implementation(Deps.zxing)
-    implementation(Deps.gson)
 
     implementation(Deps.exoplayer.core)
     implementation(Deps.exoplayer.dash)
@@ -57,11 +53,7 @@ dependencies {
     implementation(Deps.exoplayer.smoothStreaming)
     implementation(Deps.exoplayer.ui)
 
-    implementation(Deps.okhttp.okhttp)
-    implementation(Deps.okhttp.logging)
-    implementation(Deps.moshi.moshi)
-    implementation(Deps.moshi.moshi_kotlin)
-    kapt(Deps.moshi.moshi_kotlin_codegen)
+
     debugImplementation(Deps.leakCanary)
 
     testImplementation(Deps.junit)
