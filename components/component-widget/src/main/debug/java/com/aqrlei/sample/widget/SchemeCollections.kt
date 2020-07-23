@@ -1,27 +1,40 @@
-package com.aqrlei.sample.helper
+package com.aqrlei.sample.widget
 
 import android.net.Uri
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.aqrlei.sample.helper.net.NetFragment
+import com.aqrlei.sample.widget.banner.Banner2Fragment
+import com.aqrlei.sample.widget.banner.BannerFragment
+import com.aqrlei.sample.widget.banner.BannerTestFragment
 import com.aqrlei.util.toast.ToastHelper
 
 /**
  * created by AqrLei on 2020/5/22
  */
 
-const val SCHEME_HOST = "component://helper/"
+const val SCHEME_HOST = "component://widget/"
 
 const val KEY_PAGE_DATA = "page_data"
 
-object Helper {
-    const val FILE = "file"
-    const val IGNORE_BATTERY = "ignore_battery"
-    const val IMAGE = "image"
-    const val PERMISSION = "permission"
-    const val NET = "net"
-    const val TEST = "test"
+const val KEY_TYPE = "type"
+
+object BannerType {
+    const val TYPE_2 = "0"
+    const val TYPE_TEST = "1"
+}
+
+object Widget {
+    const val BANNER = "banner"
+    const val BANNER2 = "${BANNER}?${KEY_TYPE}=${BannerType.TYPE_2}"
+    const val BANNER_TEST = "${BANNER}?${KEY_TYPE}=${BannerType.TYPE_TEST}"
+    const val AUTO_DRAG = "auto_drag"
+    const val FLOW_RECYCLER = "flow_recycler"
+    const val GUIDE = "guide"
+    const val SHADOW = "shadow"
+    const val SMOOTH_SLIDE = "smooth_slide"
+    const val TEXT_SPAN = "text_span"
+
 }
 
 object SchemeHelper {
@@ -53,34 +66,43 @@ object SchemeHelper {
 
 enum class SchemeRouterEnum(private val tagPath: String) {
 
-    FILE(Helper.FILE) {
+    BANNER(Widget.BANNER) {
         override fun routerTarget(paramMap: Map<String, String>?): Fragment {
-            return FileFragment::class.java.newInstance()
+            return when (paramMap?.get(KEY_TYPE)) {
+                BannerType.TYPE_2 -> Banner2Fragment::class.java.newInstance()
+                BannerType.TYPE_TEST -> BannerTestFragment::class.java.newInstance()
+                else -> BannerFragment::class.java.newInstance()
+            }
         }
     },
-    IGNORE_BATTERY(Helper.IGNORE_BATTERY) {
+    AUTO_DRAG(Widget.AUTO_DRAG) {
         override fun routerTarget(paramMap: Map<String, String>?): Fragment {
-            return IgnoreBatteryFragment::class.java.newInstance()
+            return AutoDragFragment::class.java.newInstance()
         }
     },
-    IMAGE(Helper.IMAGE) {
+    FLOW_RECYCLER(Widget.FLOW_RECYCLER) {
         override fun routerTarget(paramMap: Map<String, String>?): Fragment {
-            return ImageFragment::class.java.newInstance()
+            return FlowRecyclerFragment::class.java.newInstance()
         }
     },
-    PERMISSION(Helper.PERMISSION) {
+    GUIDE(Widget.GUIDE) {
         override fun routerTarget(paramMap: Map<String, String>?): Fragment {
-            return PermissionFragment::class.java.newInstance()
+            return GuideFragment::class.java.newInstance()
         }
     },
-    NET(Helper.NET) {
+    SHADOW(Widget.SHADOW) {
         override fun routerTarget(paramMap: Map<String, String>?): Fragment {
-            return NetFragment::class.java.newInstance()
+            return ShadowFragment::class.java.newInstance()
         }
     },
-    TEST(Helper.TEST) {
+    SMOOTH_SLIDE(Widget.SMOOTH_SLIDE) {
         override fun routerTarget(paramMap: Map<String, String>?): Fragment {
-            return TestFragment::class.java.newInstance()
+            return SmoothSlideFragment::class.java.newInstance()
+        }
+    },
+    TEXT_SPAN(Widget.TEXT_SPAN) {
+        override fun routerTarget(paramMap: Map<String, String>?): Fragment {
+            return TextSpanFragment::class.java.newInstance()
         }
     };
 

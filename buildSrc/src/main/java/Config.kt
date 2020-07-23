@@ -39,7 +39,7 @@ object ClassPath {
     const val kotlin_gradle = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
     const val dokka = "org.jetbrains.dokka:dokka-android-gradle-plugin:0.9.18"
     const val image_convert = "com.aqrlei.plugin:ImageConvert:1.0.0-beta01"
-    const val component = "com.aqrlei.plugin:Component:1.0.0-beta01"
+    const val component = "com.aqrlei.plugin:Component:1.0.0-beta02"
     const val lifecycle = "com.aqrlei.plugin:LifecycleObserver:1.0.0-alpha15"
 }
 
