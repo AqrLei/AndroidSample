@@ -5,6 +5,7 @@ includeModules(arrayOf("component-helper","component-widget","base"),"components
 
 
 rootProject.buildFileName = "build.gradle.kts"
+rootProject.name = "AndroidSample"
 
 fun includeModule(name:String, path:String){
     val moduleName = ":$name"

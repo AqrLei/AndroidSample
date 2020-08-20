@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.ViewPager
-import com.aqrlei.helper.log.LogHelper
+import com.aqrlei.litelog.LogHelper
 import com.aqrlei.sample.base.BaseFragment
 import com.aqrlei.sample.widget.R
 import com.aqrlei.bannerview.widget.BannerView

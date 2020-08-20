@@ -3,8 +3,8 @@ package com.aqrlei.sample.base
 import android.view.Gravity
 import android.view.View
 import android.widget.Toast
-import com.aqrlei.util.ContextInitUtil
-import com.aqrlei.util.toast.BaseToast
+import com.aqrlei.utilcollection.ContextInitUtil
+import com.aqrlei.utilcollection.toast.BaseToast
 import kotlinx.android.synthetic.main.toast.view.*
 
 /**

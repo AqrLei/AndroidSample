@@ -4,9 +4,9 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
-import com.aqrlei.helper.log.LogHelper
+import com.aqrlei.litelog.LogHelper
 import com.aqrlei.sample.base.BaseActivity
-import com.aqrlei.util.AppUtil
+import com.aqrlei.utilcollection.AppUtil
 import java.util.*
 
 /**

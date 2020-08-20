@@ -7,8 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.aqrlei.sample.base.BaseFragment
-import com.aqrlei.util.AppUtil
-import com.aqrlei.util.BrandUtil
+import com.aqrlei.utilcollection.AppUtil
+import com.aqrlei.utilcollection.BrandUtil
 import kotlinx.android.synthetic.main.frag_ignore_battery.*
 
 /**

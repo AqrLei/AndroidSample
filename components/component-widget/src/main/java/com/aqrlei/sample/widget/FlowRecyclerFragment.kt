@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.aqrlei.sample.base.BaseFragment
-import com.aqrlei.widget.recycler.FlowLayoutManager
+import com.aqrlei.widgetcollection.recycler.FlowLayoutManager
 import kotlinx.android.synthetic.main.frag_flow_recycler.*
 import kotlinx.android.synthetic.main.recycler_flow_item.view.*
 

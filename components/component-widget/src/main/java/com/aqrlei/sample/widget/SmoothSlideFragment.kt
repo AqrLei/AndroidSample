@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.aqrlei.helper.log.LogHelper
+import com.aqrlei.litelog.LogHelper
 import com.aqrlei.sample.base.BaseFragment
 import kotlinx.android.synthetic.main.frag_smooth_slide.*
 

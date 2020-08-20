@@ -6,12 +6,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
-import com.aqrlei.helper.log.LogHelper
+import com.aqrlei.litelog.LogHelper
 import com.aqrlei.sample.base.BaseFragment
 import com.aqrlei.sample.widget.R
 import com.aqrlei.bannerview.widget.indicator.FigureIndicatorView
 import com.aqrlei.bannerview.widget.banner2.BannerView2
-import com.aqrlei.util.DensityUtil
+import com.aqrlei.utilcollection.DensityUtil
 import kotlinx.android.synthetic.main.view_banner_item.view.*
 
 /**

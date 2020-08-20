@@ -5,8 +5,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.aqrlei.permission.PermissionProxyDialogFragment
-import com.aqrlei.permission.PermissionsNeededModule
+import com.aqrlei.litepermission.PermissionProxyDialogFragment
+import com.aqrlei.litepermission.PermissionsNeededModule
 import kotlinx.android.synthetic.main.permission_item_recycler.view.*
 import kotlinx.android.synthetic.main.permission_simple_dialog.*
 

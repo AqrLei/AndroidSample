@@ -7,7 +7,7 @@ import android.graphics.Rect
 import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.aqrlei.helper.log.LogHelper
+import com.aqrlei.litelog.LogHelper
 
 /**
  * created by AqrLei on 2020/7/3

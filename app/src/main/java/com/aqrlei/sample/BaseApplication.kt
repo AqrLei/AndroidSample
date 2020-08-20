@@ -1,14 +1,14 @@
 package com.aqrlei.sample
 
 import android.app.Application
-import com.aqrlei.helper.log.LogHelper
-import com.aqrlei.helper.log.LogLevel
-import com.aqrlei.helper.log.config.LogConfig
-import com.aqrlei.helper.log.config.SimpleLogPrinterConfig
-import com.aqrlei.helper.log.printer.ConsoleLogPrinter
+import com.aqrlei.litelog.LogHelper
+import com.aqrlei.litelog.LogLevel
+import com.aqrlei.litelog.config.LogConfig
+import com.aqrlei.litelog.config.SimpleLogPrinterConfig
+import com.aqrlei.litelog.printer.ConsoleLogPrinter
 import com.aqrlei.sample.base.ToastWrapper
-import com.aqrlei.util.ContextInitUtil
-import com.aqrlei.util.toast.ToastHelper
+import com.aqrlei.utilcollection.ContextInitUtil
+import com.aqrlei.utilcollection.toast.ToastHelper
 
 /**
  * Created by AqrLei on 2019-09-23

@@ -1,11 +1,11 @@
 package com.aqrlei.sample
 
 import android.content.Context
-import com.aqrlei.net.OkHttpHelper
-import com.aqrlei.imagehandler.ImageHandleHelper
-import com.aqrlei.net.OkHttpRequest
-import com.aqrlei.net.controller.factory.DefaultHttpRequestFactory
-import com.aqrlei.net.transformer.json.factory.DefaultJsonTransformerFactory
+import com.aqrlei.litenet.OkHttpHelper
+import com.aqrlei.litedraw.ImageHandleHelper
+import com.aqrlei.litenet.OkHttpRequest
+import com.aqrlei.litenet.controller.factory.DefaultHttpRequestFactory
+import com.aqrlei.litenet.transformer.json.factory.DefaultJsonTransformerFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 

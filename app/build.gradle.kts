@@ -1,13 +1,20 @@
 plugins {
     id("com.aqrlei.plugin.component")
+
     kotlin("android")
     kotlin("android.extensions")
     kotlin("kapt")
-    id("com.aqrlei.plugin.imageConvert")
-    id("com.aqrlei.plugin.lifecycleobserver")
+    id("com.aqrlei.plugin.imageconvert")
 }
 
 android {
+
+    // https://android-review.googlesource.com/c/platform/frameworks/support/+/1341853/17/ui/ui-tooling/build.gradle#66
+    packagingOptions {
+        exclude("META-INF/metadata.jvm.kotlin_module")
+        exclude("META-INF/metadata.kotlin_module")
+    }
+
     compileSdkVersion(App.compileSdk)
 
     defaultConfig {

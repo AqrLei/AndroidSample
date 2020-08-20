@@ -8,8 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.aqrlei.sample.base.BaseFragment
-import com.aqrlei.util.DensityUtil
-import com.aqrlei.widget.text.BackgroundShapeSpan
+import com.aqrlei.utilcollection.DensityUtil
+import com.aqrlei.widgetcollection.text.BackgroundShapeSpan
 import kotlinx.android.synthetic.main.frag_textspan.*
 
 /**

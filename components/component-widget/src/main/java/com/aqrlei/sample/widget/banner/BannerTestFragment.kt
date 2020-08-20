@@ -7,14 +7,14 @@ import android.view.*
 import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager2.widget.ViewPager2
-import com.aqrlei.helper.log.LogHelper
+import com.aqrlei.litelog.LogHelper
 import com.aqrlei.sample.widget.R
 import com.aqrlei.sample.base.BaseFragment
 import com.aqrlei.bannerview.widget.BannerView
 import com.aqrlei.bannerview.widget.indicator.FigureIndicatorView
 import com.aqrlei.bannerview.widget.banner2.BannerView2
-import com.aqrlei.util.DensityUtil
-import com.aqrlei.util.toast.ToastHelper
+import com.aqrlei.utilcollection.DensityUtil
+import com.aqrlei.utilcollection.toast.ToastHelper
 import com.google.android.exoplayer2.C
 import com.google.android.exoplayer2.Player
 import com.google.android.exoplayer2.SimpleExoPlayer

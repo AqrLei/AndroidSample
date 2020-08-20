@@ -12,7 +12,7 @@ import com.aqrlei.sample.widget.banner.Banner2Fragment
 import com.aqrlei.sample.widget.banner.BannerFragment
 import com.aqrlei.sample.widget.banner.BannerTestFragment
 import com.aqrlei.sample.widget.BannerDispatchFragment
-import com.aqrlei.util.toast.ToastHelper
+import com.aqrlei.utilcollection.toast.ToastHelper
 
 /**
  * created by AqrLei on 2020/5/22

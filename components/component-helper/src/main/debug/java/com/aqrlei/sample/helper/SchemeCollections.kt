@@ -5,7 +5,7 @@ import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.aqrlei.sample.helper.net.NetFragment
-import com.aqrlei.util.toast.ToastHelper
+import com.aqrlei.utilcollection.toast.ToastHelper
 
 /**
  * created by AqrLei on 2020/5/22

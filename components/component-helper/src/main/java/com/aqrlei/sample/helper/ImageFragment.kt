@@ -7,12 +7,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
-import com.aqrlei.cache.lru.LruCacheConfig
-import com.aqrlei.cache.lru.LruCacheHelper
-import com.aqrlei.imagehandler.ImageHandleHelper
-import com.aqrlei.imagehandler.decorator.ShapeImageDecorator
+import com.aqrlei.litecache.lru.LruCacheConfig
+import com.aqrlei.litecache.lru.LruCacheHelper
+import com.aqrlei.litedraw.ImageHandleHelper
+import com.aqrlei.litedraw.decorator.ShapeImageDecorator
 import com.aqrlei.sample.base.BaseFragment
-import com.aqrlei.util.CacheFileUtil
+import com.aqrlei.utilcollection.CacheFileUtil
 import kotlinx.android.synthetic.main.frag_imagehandler.*
 
 /**

@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.aqrlei.sample.base.BaseFragment
-import com.aqrlei.widget.AutoDragLayout
+import com.aqrlei.widgetcollection.AutoDragLayout
 import kotlinx.android.synthetic.main.frag_auto_drag.*
 
 /**

@@ -7,9 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.aqrlei.sample.base.SimplePermissionDialogFragment
-import com.aqrlei.permission.*
+import com.aqrlei.litepermission.*
 import com.aqrlei.sample.base.BaseFragment
-import com.aqrlei.util.toast.ToastHelper
+import com.aqrlei.utilcollection.toast.ToastHelper
 import kotlinx.android.synthetic.main.frag_permission.*
 
 /**
