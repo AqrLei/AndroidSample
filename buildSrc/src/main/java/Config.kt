@@ -32,13 +32,15 @@ object ClassPath {
 class Lib {
     val bannerView = "com.aqrlei.lib:bannerview:1.0.1"
     val logHelper = "com.aqrlei.lib:litelog:1.0.2"
-    val widget_collection= "com.aqrlei.lib:widgetcollection:1.0.1"
+    val widget_collection = "com.aqrlei.lib:widgetcollection:1.0.1"
     val util_collection = "com.aqrlei.lib:utilcollection:1.0.1"
     val guide = "com.aqrlei.lib:guide:1.0.1"
     val permission = "com.aqrlei.lib:litepermission:1.0.1"
     val cache = "com.aqrlei.lib:litecache:1.0.1"
-    val net = "com.aqrlei.lib:litenet:1.0.1"
     val imageHandler = "com.aqrlei.lib:litedraw:1.0.1"
+
+    val net = "com.aqrlei.lib:litenet:1.0.1"
+
 }
 
 object Deps {
@@ -48,6 +50,7 @@ object Deps {
     val junit = "junit:junit:4.12"
     val kotlin = Kotlin()
     val lib = Lib()
+    val liteNet = LiteNet()
     val leakCanary = "com.squareup.leakcanary:leakcanary-android:2.2"
     val material = "com.google.android.material:material:1.1.0"
 
@@ -94,6 +97,13 @@ sealed class SquareUp {
         val moshi_kotlin = "com.squareup.moshi:moshi-kotlin:${Versions.moshi}"
         val moshi_kotlin_codegen = "com.squareup.moshi:moshi-kotlin-codegen:${Versions.moshi}"
     }
+}
+
+class LiteNet() {
+    val litenet = "com.aqrlei.lib:litenet:1.0.2"
+    val transformer_moshi = "com.aqrlei.lib:litenet-transformer-moshi:1.0.2"
+    val transformer_common = "com.aqrlei.lib:litenet-transformer-common:1.0.2"
+    val request_coroutine = "com.aqrlei.lib:litenet-request-coroutine:1.0.2"
 }
 
 private object Versions {

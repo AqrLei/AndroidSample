@@ -17,7 +17,7 @@ import com.aqrlei.litelog.LogHelper
 import com.aqrlei.litenet.OkHttpHelper
 import com.aqrlei.litenet.OkHttpRequest
 import com.aqrlei.litenet.exception.CancelException
-import com.aqrlei.litenet.transformer.MediaUriTransFormer
+import com.aqrlei.litenet.transformer.common.MediaUriTransFormer
 import com.aqrlei.sample.base.BaseFragment
 import com.aqrlei.sample.base.ImageHelper
 import com.aqrlei.utilcollection.CacheFileUtil

@@ -13,7 +13,7 @@ import com.aqrlei.litelog.LogHelper
 import com.aqrlei.litenet.IHttpCallback
 import com.aqrlei.litenet.OkHttpHelper
 import com.aqrlei.litenet.OkHttpRequest
-import com.aqrlei.litenet.transformer.FileTransformer
+import com.aqrlei.litenet.transformer.common.FileTransformer
 import com.aqrlei.sample.base.BaseFragment
 import com.aqrlei.sample.helper.R
 import com.aqrlei.utilcollection.CacheFileUtil
@@ -163,16 +163,6 @@ class NetFragment : BaseFragment(), View.OnClickListener {
 
         context?.let {
             val callback = object : OkHttpRequest.FileCallback() {
-                override fun onBackground(response: Response): File? {
-                    super.onBackground(response)
-                    val transformer = FileTransformer(
-                        "qexdTest", ".apk",
-                        CacheFileUtil.getAppFilesDirFile(it, "apk"), this)
-                    return response.body?.let { body ->
-                        transformer.transformer(body, File::class.java)
-                    }
-                }
-
                 override fun onFinish(data: File?, e: Throwable?) {
                     super.onFinish(data, e)
                     data?.let {
@@ -186,8 +176,9 @@ class NetFragment : BaseFragment(), View.OnClickListener {
                 }
             }
 
+            val transformer = FileTransformer("qexdTest", ".apk", CacheFileUtil.getAppFilesDirFile(it, "apk"), callback)
 
-            OkHttpHelper.download(downloadApk, File::class.java, callback, null)
+            OkHttpHelper.download(downloadApk, File::class.java, callback, transformer)
         }
     }
 }

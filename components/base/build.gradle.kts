@@ -47,9 +47,12 @@ dependencies {
 
     api(Deps.material)
 
+    api(Deps.liteNet.litenet)
+    api(Deps.liteNet.transformer_common)
+    api(Deps.liteNet.transformer_moshi)
+    api(Deps.liteNet.request_coroutine)
 
     api(Deps.lib.cache)
-    api(Deps.lib.net)
     api(Deps.lib.permission)
     api(Deps.lib.imageHandler)
     api(Deps.lib.logHelper)
