@@ -52,7 +52,7 @@ object Deps {
     val lib = Lib()
     val liteNet = LiteNet()
     val leakCanary = "com.squareup.leakcanary:leakcanary-android:2.2"
-    val material = "com.google.android.material:material:1.1.0"
+    val material = "com.google.android.material:material:1.2.0"
 
     val okhttp = SquareUp.OkHttp()
     val moshi = SquareUp.Moshi()
